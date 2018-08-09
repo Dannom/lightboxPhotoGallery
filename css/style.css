@@ -1,0 +1,96 @@
+.header-section {
+  display: block;
+  background-image: url("../img/bcg2.jpg");
+  background-size: cover;
+  background-attachment: scroll;
+  position: relative;
+  height: 200px;
+}
+
+.header--container {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1, h2, h4 {
+  text-align: center;
+  font-family: Apple Chancery, cursive;
+  color: black;
+}
+
+.container {
+  margin-top: 20px;
+  font-size: 0;
+}
+
+.grid-image {
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.practice--modal {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: auto;
+}
+
+.modal--image {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.realSizeImage {
+  position: relative;
+  transform: scale(0.5, 0.5);
+}
+@media screen and (max-width: 992px) {
+  .realSizeImage {
+    transform: scale(0.4, 0.4);
+  }
+}
+@media screen and (max-width: 578px) {
+  .realSizeImage {
+    transform: scale(0.3, 0.3);
+  }
+}
+
+.arrow-right {
+  position: absolute;
+  border-left: 2em solid coral;
+  border-right: 2em solid transparent;
+  border-top: 2em solid transparent;
+  border-bottom: 2em solid transparent;
+  top: 50%;
+  transform: translateY(-1em);
+  right: 0;
+}
+
+.arrow-left {
+  position: absolute;
+  border-left: 2em solid transparent;
+  border-right: 2em solid coral;
+  border-top: 2em solid transparent;
+  border-bottom: 2em solid transparent;
+  top: 50%;
+  transform: translateY(-1em);
+  left: 0;
+}
+
+.arrow-left:hover {
+  cursor: pointer;
+  border-right: 2em solid black;
+}
+
+/*# sourceMappingURL=style.css.map */
